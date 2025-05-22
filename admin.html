@@ -32,7 +32,52 @@
         <button type="submit">Add Event</button>
       </form>
     </section>
-  </div>
-  <script src="admin.js"></script>
+ </div>
+
+  <header class="admin-navbar">
+    <h2>E-Cell Admin</h2>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Members</a></li>
+        <li><a href="#">Settings <span class="badge">3</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="admin-dashboard">
+    <div class="sidebar">
+      <h3>Quick Actions</h3>
+      <ul>
+        <li><button onclick="addEvent()">Add Event</button></li>
+        <li><button onclick="refreshTable()">Refresh Data</button></li>
+      </ul>
+    </div>
+
+    <div class="dashboard-content">
+      <h3>Recent Submissions</h3>
+      <table class="admin-table" id="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Event</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows via JS -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 E-Cell Admin Panel
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
