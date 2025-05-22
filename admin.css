@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background: #0077ff;
+  color: white;
+  height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.sidebar h2 {
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins';
+}
+
+form button {
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #005ecb;
+}
